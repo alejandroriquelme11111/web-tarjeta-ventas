@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link de css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--link de libreria de iconos-->
+    <script
+      src="https://kit.fontawesome.com/bc34976f73.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>mustang</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="producto">
+        <h1>shelby Gt 500</h1>
+        <img src="assets/img/shelby.png" alt="shelby" />
+        <h2 id="price">$37.000</h2>
+        <input type="number" placeholder="cantidad" id="userAmount" min="1" />
+
+        <input type="text" placeholder="color" id="userColor" />
+        <input type="text" placeholder="Año" id="carYear" />
+
+        <div class="iconos">
+          <i id="papelera" class="fa-solid fa-trash-can"></i>
+          <button id="getTotal">comprar</button>
+          <i id="trash" class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </div>
+    <section id="totalPrice">
+      <p>total: $ <span id="total">0</span></p>
+      <p>cantidad:<span id="amount">0</span></p>
+      <p>Año:<span id="year">0</span></p>
+      <p>color:</p>
+      <div id="colorUser" class="circulo"></div>
+    </section>
+    <!--link de javascript-->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
